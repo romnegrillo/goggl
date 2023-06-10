@@ -17,7 +17,6 @@ export const ResultContextProvider = ({ children }) => {
     setIsLoading(true);
 
     const endPoint = `${baseUrl}${query}`;
-    console.log('endPoint', endPoint);
 
     const response = await fetch(endPoint, {
       method: 'GET',
